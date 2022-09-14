@@ -1,0 +1,14 @@
+$darkPrimary: #434343;
+$darkSecondary: #776F6F;
+$clearPrimary: white;
+$goldPrimary: #AEA12B;
+$yellow: #D4E700;
+
+$fontH2: 32px;
+
+$weightH2: 300;
+
+@mixin shadowBox {
+    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+}
