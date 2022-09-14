@@ -4,7 +4,7 @@ $clearPrimary: white;
 $goldPrimary: #AEA12B;
 $yellow: #D4E700;
 
-$fontH2: 32px;
+$fontH2: clamp(20px, 3vw, 32px);
 
 $weightH2: 300;
 
