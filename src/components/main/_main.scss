@@ -1,13 +1,14 @@
 @import "../../styles/setting.scss";
 
 main{
-    margin-top: 30px;
     width: 100vw;
-    min-height: calc(100vh - 145px);
+    min-height: calc(100vh - 110px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     .profilCardContainer{
+        // margin-top: 20px;
         width: $globalWidth;
         height: 260px;
         display: flex;
@@ -60,9 +61,10 @@ main{
                         justify-content: center;
                         align-items: center;
                         font-size: 10px;
-                        :hover{
-                            cursor: pointer;
-                        }
+                    }
+                    .questionContainer
+                    :hover{
+                        cursor: pointer;
                     }
                 }
                 .notation{
@@ -88,9 +90,141 @@ main{
                         justify-content: center;
                         align-items: center;
                         font-size: 10px;
-                        :hover{
-                            cursor: pointer;
+                    }
+                    .questionContainer
+                    :hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .contentContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $globalWidth;
+        height: calc(95vh - ( 260px + 110px + 30px ));
+        .leftContainer{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .information{
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                .lignContainer{
+                    height: 20%;
+                    width: 100%;
+                    .lignOne{
+                        height: 5px;
+                        width: 100%;
+                        background-color: $darkPrimary;
+                    }
+                    .lignTwo{
+                        margin-top: 3px;
+                        height: 1px;
+                        width: 100%;
+                        background-color: $darkPrimary;
+                    }
+                }
+                .textContainer{
+                    h3{
+                        font-size: $fontH3;
+                        font-weight: $weightH1;
+                    }
+                    p{
+                        font-size: $p;
+                        color: $darkSecondary;
+                    }
+                }
+            }
+            .contact{
+                height: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .lignContainer{
+                    height: 20%;
+                    width: 100%;
+                    .lignOne{
+                        height: 5px;
+                        width: 100%;
+                        background-color: $darkPrimary;
+                    }
+                    .lignTwo{
+                        margin-top: 3px;
+                        height: 1px;
+                        width: 100%;
+                        background-color: $darkPrimary;
+                    }
+                }
+                .bottomContainer{
+                    h3{
+                        font-size: $fontH3;
+                        font-weight: $weightH1;
+                        span{
+                            color: $goldPrimary
                         }
+                        margin-bottom: 10px;
+                    }
+                    button{
+                        width: 217px;
+                        height: 60px;
+                        border-radius: 10px;
+                        background-color: $darkPrimary;
+                        color: white;
+                        border: none;
+                        font-size: $pSecondary;    
+                        -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+                        box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+                    }
+                    button:hover{
+                        cursor: pointer;
+                    }
+                    .mail{
+                        background-color: white;
+                        color: $darkPrimary;
+                        margin-left: 40px;
+                        border: 1px solid $darkPrimary;
+                        
+                    }
+                }
+            }
+        }
+        .rightContainer{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            .socialValue{
+                background-color: white;
+                -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+                box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+                border-radius: 20px;
+                height: 100%;
+                width: 70%;
+                ul{
+                    height: 95%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        height: 33%;
+                        text-align: center;
+                        font-size: 18px;
+                        span{
+                            font-size: 52px;
+                            color: $goldPrimary;
+                        }
+
                     }
                 }
             }
