@@ -1,0 +1,99 @@
+@import "../../styles/setting.scss";
+
+main{
+    margin-top: 30px;
+    width: 100vw;
+    min-height: calc(100vh - 145px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profilCardContainer{
+        width: $globalWidth;
+        height: 260px;
+        display: flex;
+        .rightContainer{
+            // background-color: aqua;
+            .idContainer{
+                height: 80%;
+                h1{
+                    font-size: $fontH1;
+                    font-weight: $weightH1;
+                    margin: 0;
+                }
+                h2{
+                    font-size: $fontH2;
+                    font-weight: $weightH2;
+                    span{
+                        font-size: 24px;
+                        color: $darkSecondary;
+                    }
+                }
+                .city{
+                    font-size: 24px;
+                    color: $darkSecondary;
+                }
+            }
+            .addValue{
+                height: 20%;
+                display: flex;
+                .recommendation{
+                    margin-top: 5px;
+                    position: relative;
+                    display: flex;
+                    width: 300px;
+                    svg{
+                        margin-top: 3px;
+                    }
+                    .text{
+                        margin-left: 5px;
+                        font-size: $p;
+                    }
+                    .questionContainer{
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        border: 1px solid $darkPrimary;
+                        border-radius: 50%;
+                        height: 13px;
+                        width: 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        :hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .notation{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    margin-left: 40px;
+                    .starsContainer{
+                        svg{
+                            margin-top: 3px;
+                        }
+                    }
+                    .questionContainer{
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        border: 1px solid $darkPrimary;
+                        border-radius: 50%;
+                        height: 13px;
+                        width: 13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        :hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
