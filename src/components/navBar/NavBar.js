@@ -1,11 +1,15 @@
 import React from 'react';
-import "./_NavBar.scss";
+import "./_navBar.scss";
+import moi from "../../assets/nc.png"
 
 const NavBar = () => {
     return (
-        <div className='navBar'>
-            
-        </div>
+        <header>
+            <div className="navBar">
+                <img src={moi} alt="Nicolas CASTERA" />
+                <h2>Vous vendez votre bien? <span>Laissez moi vous conseiller</span></h2>
+            </div>
+        </header>
     );
 };
 
