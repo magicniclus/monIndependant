@@ -32,6 +32,7 @@ main{
                 .city{
                     font-size: 24px;
                     color: $darkSecondary;
+                    font-weight: $weightH2;
                 }
             }
             .addValue{
@@ -135,6 +136,7 @@ main{
                     h3{
                         font-size: $fontH3;
                         font-weight: $weightH1;
+                        margin-bottom: 10px;
                     }
                     p{
                         font-size: $p;
