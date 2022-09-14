@@ -1,13 +1,15 @@
 import React from 'react';
 import NavBar from "../components/navBar/NavBar";
 import Footer from "../components/footer/Footer";
-import Main from '../components/main/Main';
+import TopMainContainer from '../components/main/TopMainContainer';
 
 const Accueil = () => {
     return (
         <>  
             <NavBar />
-            <Main />
+            <main>
+                <TopMainContainer />
+            </main>
             <Footer />
         </>
     );
