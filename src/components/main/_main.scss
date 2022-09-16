@@ -14,6 +14,12 @@
         @media screen and (max-width: 1024px) {
             height: 155px;
         }
+        @media screen and (max-width: 768px) {
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
         img{
             @media screen and (max-width: 1024px) {
                 width: 10em;
@@ -22,17 +28,25 @@
         }
         .rightContainer{
             margin-left: 3vw;
-            // background-color: aqua;
             .idContainer{
                 height: 80%;
                 h1{
                     font-size: $fontH1;
                     font-weight: $weightH1;
                     margin: 0;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 425px) {
+                        font-size: 54px;
+                    }
                 }
                 h2{
                     font-size: $fontH2;
                     font-weight: $weightH2;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                    }
                     span{
                         font-size: 24px;
                         color: $darkSecondary;
@@ -46,6 +60,10 @@
                     font-size: 24px;
                     color: $darkSecondary;
                     font-weight: $weightH2;
+                    @media screen and (max-width: 768px) {
+                        text-align: center;
+                        margin-top: 1rem;
+                    }
                     @media screen and (max-width: 1200px) {
                         font-size: 18px;
                     }
@@ -54,6 +72,12 @@
             .addValue{
                 height: 20%;
                 display: flex;
+                @media screen and (max-width: 768px) {
+                    margin-top: 2rem;
+                } 
+                @media screen and (max-width: 425px) {
+                    display: none;
+                }
                 .recommendation{
                     margin-top: 5px;
                     position: relative;
@@ -81,6 +105,9 @@
                         justify-content: center;
                         align-items: center;
                         font-size: 10px;
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
                     }
                     .questionContainer
                     :hover{
@@ -116,6 +143,9 @@
                         justify-content: center;
                         align-items: center;
                         font-size: 10px;
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
                     }
                     .questionContainer
                     :hover{
@@ -131,20 +161,37 @@
         align-items: center;
         width: $globalWidth;
         height: calc(95vh - ( 260px + 110px + 30px ));
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            height: 100%;
+        }
         .leftContainer{
             width: 70%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @media screen and (max-width: 768px) {
+                width: 97vw;
+            }
             .information{
                 height: 50%;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    height: 100%;
+                    margin-top: 1rem;
+                }
                 // justify-content: space-between;
                 .lignContainer{
                     height: 20%;
                     width: 100%;
+                    @media screen and (max-width: 768px) {
+                        // display: none;
+                        margin-top: 1rem;
+                        width: 80vw;
+                    }
                     .lignOne{
                         height: 5px;
                         width: 100%;
@@ -162,6 +209,10 @@
                         font-size: $fontH3;
                         font-weight: $weightH1;
                         margin-bottom: 10px;
+                        @media screen and (max-width: 768px) {
+                            text-align: center;
+                            margin-top: 1rem;
+                        }
                     }
                     p{
                         font-size: $p;
@@ -174,6 +225,12 @@
                             max-height: 15rem;
                             overflow: scroll;
                         }
+                        @media screen and (max-width: 768px) {
+                            height: 100%;
+                            overflow:visible;
+                            max-height: 100%;
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -182,6 +239,10 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
+                @media screen and (max-width: 768px) {  
+                    align-items: center;
+                    margin-top: 2rem;
+                }
                 .lignContainer{
                     height: 20%;
                     width: 100%;
@@ -198,40 +259,68 @@
                     }
                 }
                 .bottomContainer{
+                    @media screen and (max-width: 768px) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
                     h3{
                         font-size: $fontH3;
                         font-weight: $weightH1;
                         @media screen and (max-width: 915px) {
                             font-size: 32px;
                         }
+                        @media screen and (max-width: 768px) {
+                            font-size: 24px;
+                            text-align: center;
+                        }
                         span{
                             color: $goldPrimary
                         }
                         margin-bottom: 10px;
                     }
-                    button{
-                        width: 217px;
-                        height: 60px;
-                        border-radius: 10px;
-                        background-color: $darkPrimary;
-                        color: white;
-                        border: none;
-                        font-size: $pSecondary;    
-                        -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
-                        box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
-                        svg{
-                            margin-right: 20px;
+                    .buttonContainer{
+                        @media screen and (max-width: 768px) {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
                         }
-                    }
-                    button:hover{
-                        cursor: pointer;
-                    }
-                    .mail{
-                        background-color: white;
-                        color: $darkPrimary;
-                        margin-left: 40px;
-                        // border: 1px solid $darkPrimary;
-                        
+                        button{
+                            width: 217px;
+                            height: 60px;
+                            border-radius: 10px;
+                            background-color: $darkPrimary;
+                            color: white;
+                            border: none;
+                            font-size: $pSecondary;    
+                            -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+                            box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+                            svg{
+                                margin-right: 20px;
+                                @media screen and (max-width: 768px) {
+                                    margin-right: 5px;
+                                }
+                            }
+                            @media screen and (max-width: 768px) {
+                                width: 150px;
+                                font-size: 18px;
+    
+                            }
+                        }
+                        button:hover{
+                            cursor: pointer;
+                        }
+                        .mail{
+                            background-color: white;
+                            color: $darkPrimary;
+                            margin-left: 40px;
+                            @media screen and (max-width: 768px) {
+                                margin-left: 0;
+                            }
+                            // border: 1px solid $darkPrimary;
+                            
+                        }
                     }
                 }
             }
@@ -241,6 +330,13 @@
             height: 100%;
             display: flex;
             justify-content: flex-end;
+            @media screen and (max-width: 768px) {
+                width: 97vw;
+                min-height: 500px;
+                max-width: 450px;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+            }
             .socialValue{
                 background-color: white;
                 -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
@@ -248,6 +344,10 @@
                 border-radius: 20px;
                 height: 100%;
                 width: 70%;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: 500px;
+                }
                 ul{
                     height: 95%;
                     display: flex;
@@ -264,11 +364,17 @@
                         @media screen and (max-width: 800px) {
                            font-size: 12px;
                         }
+                        @media screen and (max-width: 768px) {
+                            font-size: 18px;
+                        }
                         span{
                             font-size: 52px;
                             color: $goldPrimary;
                             @media screen and (max-width: 800px) {
                                font-size: 32px;
+                            }
+                            @media screen and (max-width: 768px) {
+                                font-size: 52px;
                             }
                         }
 
