@@ -8,6 +8,11 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const TopMainContainer = () => {
+
+    const sendMail = ()=>{
+        window.open('mailto:casteranicolas.contact@gmail.com?subject=Do%20we%20work%20together?&body=Hi%20Nicolas!')
+    }
+
     return (
         <div className='topMainContainer'>
             <div className="profilCardContainer">
@@ -66,7 +71,7 @@ const TopMainContainer = () => {
                                     <FontAwesomeIcon icon={faPhone} color="white" />  
                                     0631420045
                                 </button>
-                                <button onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
+                                <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
                                     <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
                                     Mail
                                 </button>
