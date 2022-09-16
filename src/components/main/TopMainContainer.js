@@ -10,7 +10,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const TopMainContainer = () => {
 
     const sendMail = ()=>{
-        window.open('mailto:casteranicolas.contact@gmail.com?subject=Do%20we%20work%20together?&body=Hi%20Nicolas!')
+        window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
     }
 
     return (
@@ -26,7 +26,7 @@ const TopMainContainer = () => {
                     <div className="addValue">
                         <div className="recommendation">
                             <FontAwesomeIcon icon={faCrown} color="#D4E700" />
-                            <div className="text">Conseiller recommandé par monindependant.com</div>
+                            <div className="text">Conseiller propulsé par SAFTI</div>
                             <div className="questionContainer">
                                 <div className="question">?</div>
                             </div>
@@ -56,7 +56,18 @@ const TopMainContainer = () => {
                         </div>
                         <div className="textContainer">
                             <h3>À propos:</h3>
-                            <p>Après 6 ans de conseil en immobilier d’investissement dans les groupes les plus prestigieux, j’ai décidé de mettre mon expertise aux service des mes clients en leurs proposants des conseils sur-mesure, répondant à leurs attentes et objectifs sur l’optimisation de la vente de leur bien ou sur leur projet d’investissement.</p>
+                            <p>Après 6 ans de conseil en immobilier d’investissement dans les groupes les plus prestigieux, j’ai décidé de mettre mon expertise aux service des mes clients en leurs proposants des conseils sur-mesure, répondant à leurs attentes et objectifs sur l’optimisation de la vente de leur bien ou sur leur projet d’investissement.<br/>
+                            Je vous garantis les meilleurs services en matière de vente immobilière :
+                            Estimation
+                            - Mise en valeur
+                            - Publicité
+                            - Sélection et suivi des acheteurs
+                            - Visites
+                            - Accompagnement personnalisé jusqu’à la signature
+
+                            Aussi, je mets à votre disposition une communication d’envergure sur une centaine de sites et des remontées en tête de liste systématiques.
+                            Je suis votre seul et unique interlocuteur et vous assure un suivi personnalisé de A à Z.
+                            </p>
                         </div>
                     </div>
                     <div className="contact">
