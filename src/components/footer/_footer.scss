@@ -28,5 +28,10 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        img{
+            @media screen and (max-width: 425px) {
+                width: 5rem;
+            }
+        }
     }
 }
