@@ -8,10 +8,18 @@
     align-items: center;
     justify-content: space-around;
     .profilCardContainer{
-        // margin-top: 20px;
         width: $globalWidth;
         height: 260px;
         display: flex;
+        @media screen and (max-width: 1024px) {
+            height: 155px;
+        }
+        img{
+            @media screen and (max-width: 1024px) {
+                width: 10em;
+                object-fit: contain;
+            }
+        }
         .rightContainer{
             margin-left: 3vw;
             // background-color: aqua;
@@ -28,12 +36,19 @@
                     span{
                         font-size: 24px;
                         color: $darkSecondary;
+                        @media screen and (max-width: 1200px) {
+                            font-size: 18px;
+                        }
                     }
+                    
                 }
                 .city{
                     font-size: 24px;
                     color: $darkSecondary;
                     font-weight: $weightH2;
+                    @media screen and (max-width: 1200px) {
+                        font-size: 18px;
+                    }
                 }
             }
             .addValue{
@@ -50,6 +65,9 @@
                     .text{
                         margin-left: 5px;
                         font-size: $p;
+                        @media screen and (max-width: 803px) {
+                            font-size: 12px;
+                        }
                     }
                     .questionContainer{
                         position: absolute;
@@ -78,6 +96,12 @@
                     .starsContainer{
                         svg{
                             margin-top: 3px;
+                        }
+                    }
+                    .text{
+                        font-size: $p;
+                        @media screen and (max-width: 803px) {
+                            font-size: 12px;
                         }
                     }
                     .questionContainer{
@@ -142,6 +166,14 @@
                     p{
                         font-size: $p;
                         color: $darkSecondary;
+                        @media screen and (max-height: 845px) {
+                            max-height: 8rem;
+                            overflow: scroll;
+                        }
+                        @media screen and (max-width: 815px) {
+                            max-height: 15rem;
+                            overflow: scroll;
+                        }
                     }
                 }
             }
@@ -149,7 +181,7 @@
                 height: 40%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: flex-end;
                 .lignContainer{
                     height: 20%;
                     width: 100%;
@@ -169,6 +201,9 @@
                     h3{
                         font-size: $fontH3;
                         font-weight: $weightH1;
+                        @media screen and (max-width: 915px) {
+                            font-size: 32px;
+                        }
                         span{
                             color: $goldPrimary
                         }
@@ -195,7 +230,7 @@
                         background-color: white;
                         color: $darkPrimary;
                         margin-left: 40px;
-                        border: 1px solid $darkPrimary;
+                        // border: 1px solid $darkPrimary;
                         
                     }
                 }
@@ -226,9 +261,15 @@
                         height: 33%;
                         text-align: center;
                         font-size: 18px;
+                        @media screen and (max-width: 800px) {
+                           font-size: 12px;
+                        }
                         span{
                             font-size: 52px;
                             color: $goldPrimary;
+                            @media screen and (max-width: 800px) {
+                               font-size: 32px;
+                            }
                         }
 
                     }
