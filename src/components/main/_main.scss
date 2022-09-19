@@ -11,6 +11,9 @@
         width: $globalWidth;
         height: 260px;
         display: flex;
+        @media screen and (max-height: 900px) {
+            height: 100%;   
+        }
         @media screen and (max-width: 1024px) {
             height: 155px;
         }
@@ -165,6 +168,9 @@
             flex-direction: column;
             height: 100%;
         }
+        @media screen and (max-height: 900px) {
+            height: 100%;   
+        }
         .leftContainer{
             width: 70%;
             height: 100%;
@@ -173,15 +179,20 @@
             justify-content: space-between;
             @media screen and (max-width: 768px) {
                 width: 97vw;
+                max-width: 450px;
             }
             .information{
-                height: 50%;
+                height: 63%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                overflow: scroll;
                 @media screen and (max-width: 768px) {
                     height: 100%;
                     margin-top: 1rem;
+                }
+                @media screen and (max-height: 900px) {
+                    height: 100%;   
                 }
                 // justify-content: space-between;
                 .lignContainer{
@@ -191,6 +202,7 @@
                         // display: none;
                         margin-top: 1rem;
                         width: 80vw;
+                        max-width: 450px;
                     }
                     .lignOne{
                         height: 5px;
@@ -205,6 +217,7 @@
                     }
                 }
                 .textContainer{
+                    margin-top: 1rem;
                     h3{
                         font-size: $fontH3;
                         font-weight: $weightH1;
@@ -217,7 +230,10 @@
                     p{
                         font-size: $p;
                         color: $darkSecondary;
-                        @media screen and (max-height: 845px) {
+                        @media screen and (max-height: 900px) {
+                            overflow: initial;   
+                        }
+                        @media screen and (max-height: 745px) {
                             max-height: 8rem;
                             overflow: scroll;
                         }
