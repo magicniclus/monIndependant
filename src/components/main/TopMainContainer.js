@@ -51,7 +51,7 @@ const TopMainContainer = () => {
                 <div className="leftContainer">
                     <div className="information">
                         <div className="lignContainer">
-                            <div className="lignOne"></div>
+                            {/* <div className="lignOne"></div> */}
                             <div className="lignTwo"></div>
                         </div>
                         <div className="textContainer">
