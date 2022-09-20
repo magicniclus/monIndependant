@@ -76,7 +76,7 @@ const TopMainContainer = () => {
                             <div className="lignTwo"></div>
                         </div> */}
                         <div className="bottomContainer">
-                            <h3>Pour une estimation <span>100% gratuite</span>:</h3>
+                            <h3>Pour une estimation <span>100% gratuite et personnalisée</span>:</h3>
                             <div className="buttonContainer"> 
                                 <a href="tel:0631420045" onSubmit={(e)=>e.preventDefault()} className='phone'> 
                                     <FontAwesomeIcon icon={faPhone} color="white" />  
