@@ -7,8 +7,8 @@ const Footer = () => {
         <footer>
             <div className="leftContainer">
                 <div className="textContainer">
-                    <p>Conditions d'utilisation</p>
-                    <p>Nous contacter</p>
+                    {/* <p>Conditions d'utilisation</p>
+                    <p>Nous contacter</p> */}
                 </div>
             </div>
             <div className="rightContainer">
