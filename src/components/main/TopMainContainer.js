@@ -92,6 +92,11 @@ const TopMainContainer = () => {
                         </ul>
                 </div>
             </div>
+            <div className="price">
+                <div className="title">
+                    <h2>Prix moyen au m2</h2>
+                </div> 
+            </div>
         </div>
     );
 };
