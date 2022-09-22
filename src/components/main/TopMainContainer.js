@@ -29,9 +29,9 @@ const TopMainContainer = () => {
                             <div className="recommendation">
                                 <FontAwesomeIcon icon={faCrown} color="#D4E700" />
                                 <div className="text">Conseiller propulsé par SAFTI</div>
-                                <div className="questionContainer">
+                                {/* <div className="questionContainer">
                                     <div className="question">?</div>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="notation">
                                 <div className="text">Notes attribué par ses clients</div>
@@ -96,8 +96,24 @@ const TopMainContainer = () => {
                 <div className="title">
                     <h2>Prix moyen au m2</h2>
                 </div> 
+                <div className="cardContainer"></div>
             </div>
-        </div>
+            <div className="contact">
+                <div className="bottomContainer">
+                    <h3>Pour une estimation <span>100% gratuite et personnalisée</span>:</h3>
+                    <div className="buttonContainer"> 
+                        <a href="tel:0631420045" onSubmit={(e)=>e.preventDefault()} className='phone'> 
+                            <FontAwesomeIcon icon={faPhone} color="white" />  
+                            0631420045
+                        </a >
+                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
+                            <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
+                            Mail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
     );
 };
 
