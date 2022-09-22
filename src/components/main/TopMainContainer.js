@@ -2,11 +2,14 @@ import React from 'react';
 import "./_main.scss";
 import moi from "../../assets/imgProfil.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCrown } from '@fortawesome/free-solid-svg-icons';
+import { faCrown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import Cards from '../cards/Cards';
+import {city} from "../../utils/city"
+
 
 const TopMainContainer = () => {
 
@@ -28,10 +31,7 @@ const TopMainContainer = () => {
                         <div className="addValue">
                             <div className="recommendation">
                                 <FontAwesomeIcon icon={faCrown} color="#D4E700" />
-                                <div className="text">Conseiller propulsé par SAFTI</div>
-                                {/* <div className="questionContainer">
-                                    <div className="question">?</div>
-                                </div> */}
+                                <div className="text">Professionnel propulsé par SAFTI</div>
                             </div>
                             <div className="notation">
                                 <div className="text">Notes attribué par ses clients</div>
@@ -94,9 +94,16 @@ const TopMainContainer = () => {
             </div>
             <div className="price">
                 <div className="title">
-                    <h2>Prix moyen au m2</h2>
+                    <h2>Prix moyen au m²</h2>
                 </div> 
-                <div className="cardContainer"></div>
+                <div className="cardContainer">
+                    <Cards data={city.gironde.bordeaux.centre} />
+                    <Cards data={city.gironde.bordeaux.bastide} />
+                    <Cards data={city.gironde.bassin.arcachon} />
+                </div>
+                <div className="bottomContainer">
+                    <a href="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></a>
+                </div>
             </div>
             <div className="contact">
                 <div className="bottomContainer">
