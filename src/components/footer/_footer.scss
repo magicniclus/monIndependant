@@ -5,9 +5,13 @@ footer{
     width: 100vw;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: $darkPrimary;
     @media screen and (max-width: 425px) {
         padding: 1rem;
+    }
+    @media screen and (max-width: 375px) {
+        flex-direction: column;
     }
     .leftContainer{
         width: 100%;
@@ -49,6 +53,11 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and (max-width: 375px) {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1rem;
+        }
         img{
             @media screen and (max-width: 425px) {
                 width: 5rem;
