@@ -7,255 +7,163 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-image: url("../../assets/background.png");
+    background-image: url("../../assets/backgroundtop.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: top -250px right;
     @media screen and (max-width: 768px) {
         background-image: none;
     }
     .profilCardContainer{
-        width: $globalWidth;
-        height: 260px;
         display: flex;
-        @media screen and (max-height: 900px) {
-            height: 100%;   
-        }
-        @media screen and (max-width: 1024px) {
-            height: 155px;
-        }
-        @media screen and (max-width: 768px) {
-            height: 100%;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 2rem;
-        }
-        img{
-            @media screen and (max-width: 1024px) {
-                width: 10em;
-                object-fit: contain;
-            }
-        }
-        .rightContainer{
-            margin-left: 3vw;
-            .idContainer{
-                height: 80%;
-                h1{
-                    font-size: $fontH1;
-                    font-weight: $weightH1;
-                    margin: 0;
-                    @media screen and (max-width: 768px) {
-                        text-align: center;
-                    }
-                    @media screen and (max-width: 425px) {
-                        font-size: 54px;
-                    }
-                }
-                h2{
-                    font-size: $fontH2;
-                    font-weight: $weightH2;
-                    @media screen and (max-width: 768px) {
-                        text-align: center;
-                    }
-                    span{
-                        font-size: 24px;
-                        color: $darkSecondary;
-                        @media screen and (max-width: 1200px) {
-                            font-size: 18px;
-                        }
-                    }
-                    
-                }
-                .city{
-                    font-size: 24px;
-                    color: $darkSecondary;
-                    font-weight: $weightH2;
-                    @media screen and (max-width: 768px) {
-                        text-align: center;
-                        margin-top: 1rem;
-                    }
-                    @media screen and (max-width: 1200px) {
-                        font-size: 18px;
-                    }
-                }
-            }
-            .addValue{
-                height: 20%;
-                display: flex;
-                @media screen and (max-width: 768px) {
-                    margin-top: 2rem;
-                } 
-                @media screen and (max-width: 425px) {
-                    display: none;
-                }
-                .recommendation{
-                    margin-top: 5px;
-                    position: relative;
-                    display: flex;
-                    width: 300px;
-                    svg{
-                        margin-top: 3px;
-                    }
-                    .text{
-                        margin-left: 5px;
-                        font-size: $p;
-                        @media screen and (max-width: 803px) {
-                            font-size: 12px;
-                        }
-                    }
-                    .questionContainer{
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        border: 1px solid $darkPrimary;
-                        border-radius: 50%;
-                        height: 13px;
-                        width: 13px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 10px;
-                        @media screen and (max-width: 768px) {
-                            display: none;
-                        }
-                    }
-                    .questionContainer
-                    :hover{
-                        cursor: pointer;
-                    }
-                }
-                .notation{
-                    position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    margin-left: 40px;
-                    .starsContainer{
-                        svg{
-                            margin-top: 3px;
-                        }
-                    }
-                    .text{
-                        font-size: $p;
-                        @media screen and (max-width: 803px) {
-                            font-size: 12px;
-                        }
-                    }
-                    .questionContainer{
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        border: 1px solid $darkPrimary;
-                        border-radius: 50%;
-                        height: 13px;
-                        width: 13px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        font-size: 10px;
-                        @media screen and (max-width: 768px) {
-                            display: none;
-                        }
-                    }
-                    .questionContainer
-                    :hover{
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-    .contentContainer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
         width: $globalWidth;
-        height: calc(95vh - ( 260px + 110px + 30px ));
-        @media screen and (max-width: 768px) {
-            flex-direction: column;
-            height: 100%;
-        }
-        @media screen and (max-height: 900px) {
-            height: 100%;   
-        }
-        .leftContainer{
-            width: 70%;
-            height: 100%;
+        .top{
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            @media screen and (max-width: 768px) {
-                width: 97vw;
-                max-width: 450px;
-            }
-            .information{
-                height: 63%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                overflow: scroll;
-                @media screen and (max-width: 768px) {
-                    height: 100%;
-                    margin-top: 1rem;
-                }
                 @media screen and (max-height: 900px) {
                     height: 100%;   
                 }
-                // justify-content: space-between;
-                .lignContainer{
-                    height: 20%;
-                    width: 100%;
-                    @media screen and (max-width: 768px) {
-                        // display: none;
-                        margin-top: 1rem;
-                        width: 80vw;
-                        max-width: 450px;
-                    }
-                    .lignOne{
-                        height: 5px;
-                        width: 100%;
-                        background-color: $darkPrimary;
-                    }
-                    .lignTwo{
-                        margin-top: 3px;
-                        height: 1px;
-                        width: 100%;
-                        background-color: $darkPrimary;
+                @media screen and (max-width: 768px) {
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 2rem;
+                }
+                img{
+                    @media screen and (max-width: 1024px) {
+                        width: 10em;
+                        object-fit: contain;
                     }
                 }
-                .textContainer{
-                    margin-top: 1rem;
-                    h3{
-                        font-size: $fontH3;
-                        font-weight: $weightH1;
-                        margin-bottom: 10px;
-                        @media screen and (max-width: 768px) {
-                            text-align: center;
-                            margin-top: 1rem;
+                .rightContainer{
+                    margin-left: 3vw;
+                    .idContainer{
+                        height: 80%;
+                        h1{
+                            font-size: $fontH1;
+                            font-weight: $weightH1;
+                            margin: 0;
+                            @media screen and (max-width: 768px) {
+                                text-align: center;
+                            }
+                            @media screen and (max-width: 425px) {
+                                font-size: 54px;
+                            }
+                        }
+                        h2{
+                            font-size: $fontH2;
+                            font-weight: $weightH2;
+                            @media screen and (max-width: 768px) {
+                                text-align: center;
+                            }
+                            span{
+                                font-size: 24px;
+                                color: $darkSecondary;
+                                @media screen and (max-width: 1200px) {
+                                    font-size: 18px;
+                                }
+                            }
+                            
+                        }
+                        .city{
+                            font-size: 24px;
+                            color: $darkSecondary;
+                            font-weight: $weightH2;
+                            @media screen and (max-width: 768px) {
+                                text-align: center;
+                                margin-top: 1rem;
+                            }
+                            @media screen and (max-width: 1200px) {
+                                font-size: 18px;
+                            }
                         }
                     }
-                    p{
-                        font-size: $p;
-                        color: $darkSecondary;
-                        @media screen and (max-height: 900px) {
-                            overflow: initial;   
-                        }
-                        @media screen and (max-height: 745px) {
-                            max-height: 8rem;
-                            overflow: scroll;
-                        }
-                        @media screen and (max-width: 815px) {
-                            max-height: 15rem;
-                            overflow: scroll;
-                        }
+                    .addValue{
+                        height: 20%;
+                        display: flex;
                         @media screen and (max-width: 768px) {
-                            height: 100%;
-                            overflow:visible;
-                            max-height: 100%;
-                            text-align: center;
+                            margin-top: 2rem;
+                        } 
+                        @media screen and (max-width: 425px) {
+                            display: none;
+                        }
+                        .recommendation{
+                            margin-top: 5px;
+                            position: relative;
+                            display: flex;
+                            width: 300px;
+                            svg{
+                                margin-top: 3px;
+                            }
+                            .text{
+                                margin-left: 5px;
+                                font-size: $p;
+                                @media screen and (max-width: 803px) {
+                                    font-size: 12px;
+                                }
+                            }
+                            .questionContainer{
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                border: 1px solid $darkPrimary;
+                                border-radius: 50%;
+                                height: 13px;
+                                width: 13px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 10px;
+                                @media screen and (max-width: 768px) {
+                                    display: none;
+                                }
+                            }
+                            .questionContainer
+                            :hover{
+                                cursor: pointer;
+                            }
+                        }
+                        .notation{
+                            position: relative;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            margin-left: 40px;
+                            .starsContainer{
+                                svg{
+                                    margin-top: 3px;
+                                }
+                            }
+                            .text{
+                                font-size: $p;
+                                @media screen and (max-width: 803px) {
+                                    font-size: 12px;
+                                }
+                            }
+                            .questionContainer{
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                border: 1px solid $darkPrimary;
+                                border-radius: 50%;
+                                height: 13px;
+                                width: 13px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 10px;
+                                @media screen and (max-width: 768px) {
+                                    display: none;
+                                }
+                            }
+                            .questionContainer
+                            :hover{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
             }
+        .bottom{
             .contact{
                 height: 40%;
                 display: flex;
@@ -362,61 +270,77 @@
                     }
                 }
             }
-        }
-        .rightContainer{
-            width: 30%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            @media screen and (max-width: 768px) {
-                width: 97vw;
-                min-height: 500px;
-                max-width: 450px;
-                margin-top: 3rem;
-                margin-bottom: 3rem;
+        }    
+    }
+    .contentContainer{
+        margin-top: 140px;
+        display: flex;
+        justify-content: space-around;
+        width: $globalWidth;
+        margin-bottom: 2rem;
+        .leftContainer{
+            max-width: 65%;
+            .propos{
+                h3{
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 1rem;
+                    font-size: 24px;
+                    font-weight: 200;
+                    line-height: 35px;
+                }
             }
-            .socialValue{
-                background-color: white;
-                -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
-                box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
-                border-radius: 20px;
-                height: 100%;
-                width: 70%;
-                @media screen and (max-width: 768px) {
-                    width: 100%;
-                    height: 500px;
+            .prestations{
+                h3{
+                    margin-top: 2rem;
+                    font-size: 36px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 1rem;
+                    font-size: 24px;
+                    font-weight: 200;
+                    line-height: 35px;
                 }
                 ul{
-                    height: 95%;
+                    margin-top: 1rem;
+                    list-style: none;
+                    font-size: 24px;
+                    font-weight: 200;
+                    line-height: 35px;
+                }
+            }
+        }
+        .rightContainer{
+            min-height: 100%;
+            width: 30%;
+            border-radius: 20px;
+            -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+            box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+            ul{
+                min-height: 100%;
+                margin-top: 2rem;
+                list-style: none;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 35px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                li{
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
-                    padding: 10px;
-                    li{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        height: 33%;
-                        text-align: center;
-                        font-size: 18px;
-                        @media screen and (max-width: 800px) {
-                           font-size: 12px;
-                        }
-                        @media screen and (max-width: 768px) {
-                            font-size: 18px;
-                        }
-                        span{
-                            font-size: 52px;
-                            color: $goldPrimary;
-                            @media screen and (max-width: 800px) {
-                               font-size: 32px;
-                            }
-                            @media screen and (max-width: 768px) {
-                                font-size: 52px;
-                            }
-                        }
-
+                    text-align: center;
+                    padding: 0.5rem;
+                    font-size: 24px;
+                    span{
+                        font-size: 64px;
+                        font-weight: 400;
+                        color: $goldPrimary;
+                        margin-bottom: 20px;
                     }
                 }
             }
