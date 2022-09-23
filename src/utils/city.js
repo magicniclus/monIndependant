@@ -1,5 +1,5 @@
 export const city = {
-    gironde: {
+    gironde:{
         bordeaux: {
             bastide: {
                 qaurtier: "La Bastide",
