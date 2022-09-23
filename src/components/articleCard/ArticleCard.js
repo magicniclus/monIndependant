@@ -2,6 +2,7 @@ import React from 'react';
 import "./_articleCard.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 const ArticleCard = (props) => {
     return (
@@ -15,7 +16,7 @@ const ArticleCard = (props) => {
                     <p>{props.text}</p>
                 </div>
                 <div className="bottom">
-                <a href="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343" href={props.link}/></a>
+                <NavLink to={"/articles/"+props.link}>En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></NavLink>
                 </div>
             </div>
         </div>
