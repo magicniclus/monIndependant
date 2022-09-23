@@ -9,6 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Cards from '../cards/Cards';
 import {city} from "../../utils/city"
+import { NavLink } from 'react-router-dom';
 
 
 const TopMainContainer = () => {
@@ -117,7 +118,7 @@ const TopMainContainer = () => {
                     }
                 </div>
                 <div className="bottomContainer">
-                    <a href="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></a>
+                    <NavLink to="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></NavLink>
                 </div>
             </div>
             <div className="contact">

@@ -69,10 +69,10 @@ const Comparatif = () => {
                     <h3>Pour une estimation <span>100% gratuite et personnalisée</span>:</h3>
                     <div className="buttonContainer"> 
                         <a href="tel:0631420045" onSubmit={(e)=>e.preventDefault()} className='phone'> 
-                            <FontAwesomeIcon icon={faPhone} color="white" />  
-                            0631420045
+                            <FontAwesomeIcon icon={faPhone} color="white" />&nbsp; 
+                            06 31 42 00 45
                         </a >
-                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
+                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'>&nbsp;
                             <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
                             Mail
                         </button>
