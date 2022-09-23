@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./_conditions.scss"
 
 const Conditions = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0); 
+    }, [])
     return (
         <div className='conditions'>
             <div className="imgContainer">
