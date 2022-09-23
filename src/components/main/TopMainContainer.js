@@ -103,7 +103,7 @@ const TopMainContainer = () => {
                                 return(
                                     <Cards key={idx} data={el}/>
                                 )
-                            }
+                            }else return null
                         })
                     }
                     {
@@ -112,7 +112,7 @@ const TopMainContainer = () => {
                                 return(
                                     <Cards key={idx} data={el} />
                                 )
-                            }
+                            }else return null
                         })
                     }
                 </div>
