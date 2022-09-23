@@ -55,7 +55,7 @@ const TopMainContainer = () => {
                                         <FontAwesomeIcon icon={faPhone} color="white" />  
                                         0631420045
                                     </a >
-                                    <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
+                                    <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
                                         <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
                                         Mail
                                     </button>
@@ -98,19 +98,19 @@ const TopMainContainer = () => {
                 </div> 
                 <div className="cardContainer">
                     {
-                        city.gironde.bordeaux.map(el => {
+                        city.gironde.bordeaux.map((el, idx) => {
                             if(el.qaurtier === "La Bastide" || el.qaurtier === "Bordeaux Centre" ){
                                 return(
-                                    <Cards data={el}/>
+                                    <Cards key={idx} data={el}/>
                                 )
                             }
                         })
                     }
                     {
-                        city.gironde.bassin.map(el=>{
+                        city.gironde.bassin.map((el, idx)=>{
                             if(el.qaurtier === "Arcachon"){
                                 return(
-                                    <Cards data={el} />
+                                    <Cards key={idx} data={el} />
                                 )
                             }
                         })
@@ -128,7 +128,7 @@ const TopMainContainer = () => {
                             <FontAwesomeIcon icon={faPhone} color="white" />  
                             0631420045
                         </a >
-                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
+                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
                             <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
                             Mail
                         </button>

@@ -30,9 +30,9 @@ const Comparatif = () => {
                         {/* <p>Desciption</p> */}
                     </div>
                     {
-                        city.gironde.bordeaux.map(el=>{
+                        city.gironde.bordeaux.map((el, idx)=>{
                             return(
-                                <Cards data={el} />
+                                <Cards key={idx} data={el} />
                             )
                         })
                     }
@@ -43,9 +43,9 @@ const Comparatif = () => {
                         {/* <p>Desciption</p> */}
                     </div>
                     {
-                        city.gironde.procheBordeaux.map(el=>{
+                        city.gironde.procheBordeaux.map((el, idx)=>{
                             return(
-                                <Cards data={el} />
+                                <Cards key={idx} data={el} />
                             )
                         })
                     }
@@ -56,9 +56,9 @@ const Comparatif = () => {
                         {/* <p>Desciption</p> */}
                     </div>
                     {
-                        city.gironde.bassin.map(el=>{
+                        city.gironde.bassin.map((el, idx)=>{
                             return(
-                                <Cards data={el} />
+                                <Cards key={idx} data={el} />
                             )
                         })
                     }
@@ -72,7 +72,7 @@ const Comparatif = () => {
                             <FontAwesomeIcon icon={faPhone} color="white" />  
                             0631420045
                         </a >
-                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail' type='mail'> 
+                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
                             <FontAwesomeIcon icon={faEnvelope} color="#434343" />  
                             Mail
                         </button>

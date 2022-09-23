@@ -6,7 +6,7 @@ const Cards = (props) => {
     console.log(data);
 
     return (
-        <div className='cards'>
+        <div key={props.key} className='cards'>
             <h4 className='titleCard'>{data.qaurtier}</h4>
             <div className="priceContainer">
                 <div className="houseContainer logement">
