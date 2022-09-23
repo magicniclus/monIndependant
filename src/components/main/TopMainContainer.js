@@ -97,9 +97,24 @@ const TopMainContainer = () => {
                     <h2>Prix moyen au m²</h2>
                 </div> 
                 <div className="cardContainer">
-                    <Cards data={city.gironde.bordeaux[5].centre} />
-                    <Cards data={city.gironde.bordeaux[0].bastide} />
-                    <Cards data={city.gironde.bassin[0].arcachon} />
+                    {
+                        city.gironde.bordeaux.map(el => {
+                            if(el.qaurtier === "La Bastide" || el.qaurtier === "Bordeaux Centre" ){
+                                return(
+                                    <Cards data={el}/>
+                                )
+                            }
+                        })
+                    }
+                    {
+                        city.gironde.bassin.map(el=>{
+                            if(el.qaurtier === "Arcachon"){
+                                return(
+                                    <Cards data={el} />
+                                )
+                            }
+                        })
+                    }
                 </div>
                 <div className="bottomContainer">
                     <a href="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></a>
