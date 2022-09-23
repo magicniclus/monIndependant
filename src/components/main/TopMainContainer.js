@@ -13,6 +13,8 @@ import {city} from "../../utils/city"
 
 const TopMainContainer = () => {
 
+    console.log(city.gironde);
+
     const sendMail = ()=>{
         window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
     }
