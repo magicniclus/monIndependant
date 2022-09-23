@@ -6,6 +6,7 @@ import Conditions from "./pages/conditions/Conditions";
 import NavBar from "./components/navBar/NavBar"
 import Faq from "./pages/FAQ/Faq";
 import Articles from "./pages/articles/Articles";
+import Comparatif from "./pages/comparatif/Comparatif";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/conditions-generales" element={<Conditions />}/>
             <Route path="/FAQ" element={<Faq />}/>
             <Route path="/articles" element={<Articles/>}/>
+            <Route path="/articles/comparatif" element={<Comparatif/>}/>
           </Routes>
         </main>
         <Footer />
