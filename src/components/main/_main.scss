@@ -8,8 +8,12 @@
     align-items: center;
     justify-content: space-around;
     background-image: url("../../assets/backgroundtop.png");
+    // background-size: contain;
     background-repeat: no-repeat;
     background-position: top -250px center;
+    @media screen and (min-width: 1515px) {
+        background-image: none;
+    }
     @media screen and (max-width: 1024px) {
         background-position: top -300px center;
     }
@@ -391,6 +395,8 @@
         .title{
             background-image: url("../../assets/bordeauxarcachon.jpg");
             background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
             width: 100vw;
             height: 300px;
             filter: grayscale(.8) ;
