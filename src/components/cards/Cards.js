@@ -3,6 +3,7 @@ import "./_cards.scss";
 
 const Cards = (props) => {
     const data = props.data
+    console.log(data);
 
     return (
         <div className='cards'>
