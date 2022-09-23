@@ -37,10 +37,10 @@ const Articles = () => {
                             <FontAwesomeIcon icon={faPhone} color="white" />&nbsp;
                             06 31 42 00 45
                         </a >
-                        <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
+                        {/* <button onClick={sendMail} onSubmit={(e)=>e.preventDefault()} className='mail'> 
                             <FontAwesomeIcon icon={faEnvelope} color="#434343" />&nbsp;  
                             Mail
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
