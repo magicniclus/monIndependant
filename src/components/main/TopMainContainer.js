@@ -13,8 +13,6 @@ import {city} from "../../utils/city"
 
 const TopMainContainer = () => {
 
-    console.log(city.gironde);
-
     const sendMail = ()=>{
         window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
     }
@@ -99,9 +97,9 @@ const TopMainContainer = () => {
                     <h2>Prix moyen au m²</h2>
                 </div> 
                 <div className="cardContainer">
-                    <Cards data={city.gironde.bordeaux.centre} />
-                    <Cards data={city.gironde.bordeaux.bastide} />
-                    <Cards data={city.gironde.bassin.arcachon} />
+                    <Cards data={city.gironde.bordeaux[5].centre} />
+                    <Cards data={city.gironde.bordeaux[0].bastide} />
+                    <Cards data={city.gironde.bassin[0].arcachon} />
                 </div>
                 <div className="bottomContainer">
                     <a href="/articles/comparatif">En savoir plus <FontAwesomeIcon icon={faChevronRight} color="#434343"/></a>
