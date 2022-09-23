@@ -12,6 +12,7 @@ const Comparatif = () => {
             </div>
             <div className="cardContainer">
                 {
+                    city.gironde.procheBordeaux.map(el=>console.log(el))
                 }
             </div>
         </div>
