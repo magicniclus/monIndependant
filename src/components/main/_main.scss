@@ -418,8 +418,13 @@
             width: $globalWidth;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-left: auto;
             margin-right: auto;
+            @media screen and (max-width: 1011px) {
+                justify-content: center;
+                margin-top: 2rem;
+            }
         }
         .bottomContainer{
             width: $globalWidth;
