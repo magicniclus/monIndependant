@@ -2,4 +2,169 @@
 
 .faq{
     min-height: calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    .imgContainer{
+        width: 100vw;
+        height: 350px;
+        background-image: url(../../assets/bordeaux.jpg);
+        background-position: center;
+        background-size: cover;
+        filter: grayscale(0.6);
+    }
+    .content{
+        h1{
+            margin-top: 3rem;
+            margin-bottom: 2rem;    
+            font-weight: 400;
+            font-size: 64px;
+            text-align: center;
+        }
+        .questionContainer{
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-top: 2rem;
+                margin-bottom: 1rem;font-size: 40px;
+                font-weight: 400;
+            }
+            p{
+                margin-top: 1rem;
+                font-size: 24px;
+                font-weight: 200;
+                line-height: 35px;
+            }
+        }
+        .questionContainer::after{
+            content: "";
+            height: 1px;
+            background-color: #434343;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
+        }
+    }
+    .contact{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @media screen and (max-width: 768px) {  
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .lignContainer{
+            height: 20%;
+            width: 100%;
+            .lignOne{
+                height: 5px;
+                width: 100%;
+                background-color: $darkPrimary;
+            }
+            .lignTwo{
+                margin-top: 3px;
+                height: 1px;
+                width: 100%;
+                background-color: $darkPrimary;
+            }
+        }
+        .bottomContainer{
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h3{
+                font-size: $fontH3;
+                font-weight: $weightH1;
+                @media screen and (max-width: 915px) {
+                    font-size: 32px;
+                }
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                    text-align: center;
+                }
+                span{
+                    color: $goldPrimary
+                }
+                margin-bottom: 10px;
+            }
+            .buttonContainer{
+                display: flex;
+                justify-content: center;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                }
+                a{
+                    text-decoration: none;
+                    background-color: $darkPrimary;
+                    color: white;
+                    font-size: $pSecondary;  
+                    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+                    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+                    padding: 0.8rem;
+                    border-radius: 10px;
+                    text-align: center;
+                    transition: transform;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in-out;
+                    @media screen and (max-width: 768px) {
+                        width: 150px;
+                        font-size: 18px;
+                    }
+                }
+                button{
+                    width: 217px;
+                    height: 60px;
+                    border-radius: 10px;
+                    background-color: $darkPrimary;
+                    color: white;
+                    border: none;
+                    font-size: $pSecondary;  
+                    text-decoration: none;  
+                    -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25); 
+                    box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.25);
+                    text-align: center;
+                    transition: transform;
+                    transition-duration: 0.2s;
+                    svg{
+                        margin-right: 20px;
+                        @media screen and (max-width: 768px) {
+                            margin-right: 5px;
+                        }
+                    }
+                    @media screen and (max-width: 768px){
+                        width: 150px;
+                        font-size: 18px;
+                    }
+                }
+                button:hover, a:hover{
+                    transform: scale(1.02);
+                }
+                button:hover, a:hover{
+                    cursor: pointer;
+                }
+                .mail{
+                    background-color: white;
+                    color: $darkPrimary;
+                    margin-left: 40px;
+                    @media screen and (max-width: 768px) {
+                        margin-left: 0;
+                    }
+                    
+                }
+            }
+        }
+    }
 }
