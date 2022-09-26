@@ -16,7 +16,7 @@ const Comparatif = () => {
     // }
 
     return (
-        <div className='comparatif'>
+        <article className='comparatif'>
             <div className="imgContainer">
             </div>
             <div className="title">
@@ -79,7 +79,7 @@ const Comparatif = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     );
 };
 
