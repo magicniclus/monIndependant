@@ -21,7 +21,7 @@ const Comparatif = () => {
             </div>
             <div className="title">
                 <h1>Comparatif</h1>
-                <p>Ce comparatif des prix au m2 est réaliser grace à différentes données (notarials, differents site d'annonce immobilière). Il a été réalisé sur le secteur de bordeaux, son agglomeration et sur le bassin d'Aracachon. Il est mis à jour le plus régulièrement possible.</p>
+                <p>Ce comparatif des prix au m2 est réalisé grâce à différentes données (notarials, differents sites d'annonce immobilière). Il a été réalisé sur le secteur de Bordeaux, son agglomération et sur le bassin d'Aracachon. Il est mis à jour le plus régulièrement possible.</p>
             </div>
             <div className="cardContainer">
                 <div className="Bordeaux city">
