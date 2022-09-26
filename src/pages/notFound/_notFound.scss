@@ -1,0 +1,15 @@
+@import "../../styles/setting.scss";
+
+.notFound{
+    min-height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        font-size: 90px;
+        @media screen and (max-width: 427px) {
+            font-size: 36px;
+        }
+    }
+}
