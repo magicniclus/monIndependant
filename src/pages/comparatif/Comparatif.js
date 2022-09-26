@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "./_comparatif.scss";
 import {city} from "../../utils/city"
 import Cards from '../../components/cards/Cards';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -11,9 +11,9 @@ const Comparatif = () => {
         window.scrollTo(0, 0); 
     }, [])
 
-    const sendMail = ()=>{
-        window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
-    }
+    // const sendMail = ()=>{
+    //     window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
+    // }
 
     return (
         <div className='comparatif'>

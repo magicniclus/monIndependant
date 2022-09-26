@@ -4,13 +4,13 @@ import "./_articles.scss";
 import article from "../../assets/articleOne.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Articles = () => {
 
-    const sendMail = ()=>{
-        window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
-    }
+    // const sendMail = ()=>{
+    //     window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
+    // }
 
     useEffect(() => {
         window.scrollTo(0, 0); 

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCrown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import Cards from '../cards/Cards';
 import {city} from "../../utils/city"
@@ -14,9 +14,9 @@ import { NavLink } from 'react-router-dom';
 
 const TopMainContainer = () => {
 
-    const sendMail = ()=>{
-        window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
-    }
+    // const sendMail = ()=>{
+    //     window.open('mailto:casteranicolas.contact@gmail.com?subject=Estimation')
+    // }
 
     return (
         <div className='topMainContainer'>
