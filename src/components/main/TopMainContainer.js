@@ -73,16 +73,16 @@ const TopMainContainer = () => {
                     </div>
                     <div className="prestations">
                         <h3>Mes prestations:</h3>
-                        <p>Je vous garantis les meilleurs services en matière de vente immobilière : </p>
+                        <p>Je vous garantis le meilleur de la vente immobilière : </p>
                         <ul>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Estimation</li>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Mise en valeur</li>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Publicité</li>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Sélection et suivi des acheteurs </li>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Visites</li>
-                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Accompagnement personnalisé jusqu’à la signature</li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Estimation de votre bien</li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Mise en valeur ( photos et video )</li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Publicité sur plus de 100 sites</li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Sélection, suivi des acheteurs </li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Visites du bien</li>
+                            <li><FontAwesomeIcon icon={faCheck} color="#434343" />  Accompagnement personnalisé à toutes les étapes du processus</li>
                         </ul>
-                        <p>Je mets à votre disposition une communication d’envergure sur une centaine de sites et des remontées en tête de liste systématiques. Je suis votre seul et unique interlocuteur et vous assure un suivi personnalisé de A à Z.</p>
+                        <p>Je communique pour vous sur une centaine des sites les plus populaires et j'optimise vos annonces afin qu'elles remontent en tête de liste. Je serais votre seul et unique interlocuteur et vous assure une prestation sur-mesure et clés en main.</p>
                     </div>
                 </div>
                 <div className="rightContainer">
