@@ -26,7 +26,7 @@ const TopMainContainer = () => {
                     <div className="rightContainer">
                         <div className="idContainer">
                             <h1>Nicolas CASTERA</h1>
-                            <h2>Spécialiste immobilier independant: <span>Ancien, neuf, investissement</span></h2>
+                            <h2>Votre agent immobilier de proximité: <span>Ancien, neuf, investissement</span></h2>
                             <div className='city'>Bordeaux et son aglomeration, Bassin d'Arcachon</div>
                         </div>
                         <div className="addValue">
